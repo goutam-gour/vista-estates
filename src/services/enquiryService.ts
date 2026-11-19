@@ -1,7 +1,9 @@
+import API_URL from "./api";
 
+const ENQUIRY_URL = `${API_URL}/enquiries`;
 import type { Enquiry } from "../types";
 
-const API_URL = "http://localhost:5000/api/enquiries";
+
 
 interface MongoEnquiry {
   _id: string;

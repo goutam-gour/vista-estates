@@ -1,5 +1,5 @@
+import API_URL from "./api";
 
-const API_URL = "http://localhost:5000/api";
 
 export interface DashboardStats {
   totalProperties: number;

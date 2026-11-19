@@ -1,7 +1,7 @@
-
+import API_URL from "./api";
 import type { Agent } from "../types";
+const AGENTS_URL = `${API_URL}/agents`;
 
-const API_URL = "http://localhost:5000/api/agents";
 
 interface MongoAgent {
   _id: string;
@@ -65,7 +65,7 @@ async function request(
     headers.Authorization = `Bearer ${getToken()}`;
   }
 
-  const response = await fetch(`${API_URL}${endpoint}`, {
+   const response = await fetch(`${AGENTS_URL}${endpoint}`, {
     ...options,
     headers,
   });

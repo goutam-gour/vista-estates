@@ -1,7 +1,7 @@
-
+import API_URL from "./api";
 import type { Property } from "../types";
 
-const API_URL = "http://localhost:5000/api";
+
 
 interface BackendProperty {
   _id: string;
